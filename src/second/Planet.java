@@ -1,4 +1,14 @@
 package second;
 
-public class Planet {
+public class Planet implements Nameable {
+    private String name;
+
+    public Planet(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String getName() {
+        return "Планета: " + name;
+    }
 }
